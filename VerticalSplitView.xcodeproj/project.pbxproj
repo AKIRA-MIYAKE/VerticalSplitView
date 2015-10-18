@@ -11,6 +11,7 @@
 		4DC3D12B1BD3D72E00C5D6E9 /* VerticalSplitView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC3D1201BD3D72E00C5D6E9 /* VerticalSplitView.framework */; settings = {ASSET_TAGS = (); }; };
 		4DC3D1301BD3D72E00C5D6E9 /* VerticalSplitViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC3D12F1BD3D72E00C5D6E9 /* VerticalSplitViewTests.swift */; };
 		4DC3D13F1BD3D95200C5D6E9 /* SwiftyEvents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC3D13E1BD3D95200C5D6E9 /* SwiftyEvents.framework */; };
+		4DC3D1411BD3D9AA00C5D6E9 /* VerticalSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC3D1401BD3D9AA00C5D6E9 /* VerticalSplitViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		4DC3D12F1BD3D72E00C5D6E9 /* VerticalSplitViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalSplitViewTests.swift; sourceTree = "<group>"; };
 		4DC3D1311BD3D72E00C5D6E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DC3D13E1BD3D95200C5D6E9 /* SwiftyEvents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyEvents.framework; path = Carthage/Build/iOS/SwiftyEvents.framework; sourceTree = "<group>"; };
+		4DC3D1401BD3D9AA00C5D6E9 /* VerticalSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalSplitViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				4DC3D1231BD3D72E00C5D6E9 /* VerticalSplitView.h */,
+				4DC3D1401BD3D9AA00C5D6E9 /* VerticalSplitViewController.swift */,
 				4DC3D1251BD3D72E00C5D6E9 /* Info.plist */,
 			);
 			path = VerticalSplitView;
@@ -146,6 +149,7 @@
 		4DC3D1171BD3D72E00C5D6E9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = MiyakeAkira;
 				TargetAttributes = {
@@ -197,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DC3D1411BD3D9AA00C5D6E9 /* VerticalSplitViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +316,7 @@
 		4DC3D1351BD3D72E00C5D6E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -326,12 +332,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.dream-of-electric-cat.VerticalSplitView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		4DC3D1361BD3D72E00C5D6E9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
