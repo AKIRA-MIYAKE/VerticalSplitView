@@ -10,6 +10,7 @@
 		4DC3D1241BD3D72E00C5D6E9 /* VerticalSplitView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DC3D1231BD3D72E00C5D6E9 /* VerticalSplitView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4DC3D12B1BD3D72E00C5D6E9 /* VerticalSplitView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC3D1201BD3D72E00C5D6E9 /* VerticalSplitView.framework */; settings = {ASSET_TAGS = (); }; };
 		4DC3D1301BD3D72E00C5D6E9 /* VerticalSplitViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC3D12F1BD3D72E00C5D6E9 /* VerticalSplitViewTests.swift */; };
+		4DC3D13F1BD3D95200C5D6E9 /* SwiftyEvents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC3D13E1BD3D95200C5D6E9 /* SwiftyEvents.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		4DC3D12A1BD3D72E00C5D6E9 /* VerticalSplitViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VerticalSplitViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DC3D12F1BD3D72E00C5D6E9 /* VerticalSplitViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalSplitViewTests.swift; sourceTree = "<group>"; };
 		4DC3D1311BD3D72E00C5D6E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DC3D13E1BD3D95200C5D6E9 /* SwiftyEvents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyEvents.framework; path = Carthage/Build/iOS/SwiftyEvents.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DC3D13F1BD3D95200C5D6E9 /* SwiftyEvents.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +56,7 @@
 		4DC3D1161BD3D72E00C5D6E9 = {
 			isa = PBXGroup;
 			children = (
+				4DC3D13E1BD3D95200C5D6E9 /* SwiftyEvents.framework */,
 				4DC3D1221BD3D72E00C5D6E9 /* VerticalSplitView */,
 				4DC3D12E1BD3D72E00C5D6E9 /* VerticalSplitViewTests */,
 				4DC3D1211BD3D72E00C5D6E9 /* Products */,
@@ -311,6 +315,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = VerticalSplitView/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -327,6 +336,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = VerticalSplitView/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -375,6 +389,7 @@
 				4DC3D1361BD3D72E00C5D6E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4DC3D1371BD3D72E00C5D6E9 /* Build configuration list for PBXNativeTarget "VerticalSplitViewTests" */ = {
 			isa = XCConfigurationList;
@@ -383,6 +398,7 @@
 				4DC3D1391BD3D72E00C5D6E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
